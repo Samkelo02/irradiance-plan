@@ -1,0 +1,21 @@
+POST http://localhost:6001/api/weather/
+content-type: application/json
+
+{
+    "period_start": "10"
+}
+
+###
+ GET http://localhost:6001/api/company
+
+###
+
+POST http://localhost:6001/api/company/
+content-type: application/json
+
+{
+    "staff_name": "Peter",
+    "password": "Parker"
+}
+###
+GET http://localhost:6001/api/weather 
