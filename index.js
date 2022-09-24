@@ -2,10 +2,14 @@ import * as sqlite from 'sqlite';
 import sqlite3 from 'sqlite3';
 import express from 'express';
 
-//app.use(express.static('public'))
+
 
 
 const app = express();
+
+//app.use(express.static('public'))
+
+
 
 app.use(express.json());
 
@@ -66,7 +70,7 @@ app.get('/api/weather', async function(req, res) {
 
 console.log('done');
 
-const PORT = 6001;
+const PORT = process.env.PORT || 6001;
 app.listen(PORT, function(){
     console.log(`Solar prediction API started at ${PORT}`)
 });
