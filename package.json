@@ -25,7 +25,8 @@
   "contributors": [],
   "scripts": {
     "dev": "nodemon",
-    "test": ""
+    "test": "mocha",
+    "start": "index.js"
   },
   "dependencies": {
     "express": "^4.18.1",
